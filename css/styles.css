@@ -1,0 +1,166 @@
+:root {
+  --banner-image: url(../img/chocolate_derretido.png);
+  --footer-image: url(../img/splash.png);
+ 
+ }
+ 
+ body{
+  margin: 0;
+  padding: 0;
+  background-color: #00C9a7;
+  font-family: 'poppins';
+}
+
+ #banner {
+  background: var(--banner-image);
+  background-color: rgb(50, 132, 199);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+  color:white
+}
+
+
+header a:first-of-type {
+  margin-left: auto;
+}
+
+header {
+  display: flex;
+  background: linear-gradient(to right, #111, #24252a);
+  padding: 20px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+header span {
+  color: white;
+  font-family: 'poppins';
+  font-size: 150%;
+}
+
+header a {
+  color: white;
+  font-family: 'poppins';
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #c5eff7;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+} 
+
+#apresentação{
+  padding:10px; 
+}
+img:hover{
+  animation: pulsar 1s ease-in 0s 1 normal forwards;  
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+img{
+  padding: 15px;
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+p{
+  
+  font-size:larger;
+}
+
+#footer {
+  background: var(--footer-image);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color:white
+}
+#bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+#galeria{
+  style="display: flex"
+  max-width: 120px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2{
+  padding:10px
+}
+
+/*Regras pra dispositiveis moveis*/
+
+@media screen and (max-width: 600px) {
+  #banner {
+    background: var(--banner-image);
+    background-color: rgb(50, 132, 199);
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+    color:white
+  }
+  
+  
+  header a:first-of-type {
+    margin-left: auto;
+  }
+  
+  header {
+    display: flex;
+    background: linear-gradient(to right, #111, #24252a);
+    padding: 20px;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  header span {
+    color: white;
+    font-family: 'poppins';
+    font-size: 150%;
+  }
+  
+  header a {
+    color: white;
+    font-family: 'poppins';
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    color: #c5eff7;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  } 
+  /*----------------------------*/
+#footer {
+    background: var(--footer-image);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #bottom-left {
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+  }
+  #galeria{
+    justify-content: center;
+  }
+ }
